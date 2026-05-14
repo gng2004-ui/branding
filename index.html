@@ -5,11 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LogoX | GiGiBest</title>
     <style>
-        body { background-color: #000; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        img { max-width: 80%; height: auto; }
+        body { 
+            background-color: #000; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+        }
+        /* This makes the logo a clickable button */
+        a { 
+            display: block; 
+            text-align: center; 
+            text-decoration: none; 
+        }
+        img { 
+            max-width: 80%; 
+            height: auto; 
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+        img:hover {
+            opacity: 0.8; /* Subtle feedback when hovering */
+        }
     </style>
 </head>
 <body>
-    <img src="LogoX.png" alt="LogoX">
+    <!-- Clicking the logo now takes them to your Hugging Face App -->
+    <a href="https://huggingface.co/spaces/GigiBest/gigibest-nyc" target="_blank">
+        <img src="LogoX.png" alt="Enter GiGiBest">
+    </a>
 </body>
 </html>
